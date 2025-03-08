@@ -1,0 +1,208 @@
+* { margin: 0px;
+    padding: 0px;
+  }
+  
+  body {
+      font-family: "Montserrat", sans-serif;
+  }
+  
+  a {text-decoration: none;}
+  
+  .center {
+      padding-left: calc(50% - 600px);
+      padding-right: calc(50% - 600px);
+  }
+  
+  button{
+      cursor: pointer;
+  }
+  .header {
+      height: 800px;
+      background: #E1FF8F;
+      background-image: url(img/fon.svg), url(img/starfon.svg), url(img/Star\ 4.svg);
+      background-position: 1px 1000px, calc(100% - 0px) calc(1000% - 20px), 230% -330px;
+      background-repeat: no-repeat;
+  }
+  
+  .header__welcome {
+      font-family: "Montserrat";
+      font-weight: 700;
+      font-size: 64px;
+      line-height: 78.02px;
+      letter-spacing: 0px;
+      padding-top: 196px;
+  }
+  
+  .button__go:hover {
+      background-color: #FFFFFF;
+      color: #202027;
+  }
+  
+  .header__text {
+      font-family: "Montserrat";
+      font-size: 24px;
+      line-height: 32px;
+      letter-spacing: 0px;
+      padding-top: 24px;
+  }
+  
+  .header__text_go {
+      font-family: "Montserrat";
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 32px;
+      letter-spacing: 0px;
+  
+  }
+  
+  .button__go {
+      background-color: #202027;
+      border: 1px solid #202027;
+      box-sizing: border-box;
+      border-radius: 60px;
+      color: #ffffff;
+      font-family: "Montserrat";
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 34.01px;
+      text-align: center;
+      width: 247px;
+      height: 66px;
+      margin-top: 48px;
+  }
+  
+  .scrollbar {
+      display: flex;
+      justify-content: space-evenly;
+      flex-direction: row;
+      align-items: center;
+      background-color: #BCEC30;
+      height: 90px;
+      backdrop-filter: blur(50px);
+      overflow: hidden;
+  
+  }
+  
+  .scrollbar__text{
+      font-family: "Montserrat";
+      font-weight: 700;
+      font-size: 30px;
+      line-height: 33px;
+      letter-spacing: 4%;
+  }
+  
+  .games__content {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 24px;
+      align-self: stretch;
+      background: #202027;
+      padding-top: 94px;
+  }
+  
+  .games {
+      font-family: Montserrat;
+      font-weight: 700;
+      font-size: 64px;
+      line-height: 78.02px;
+      letter-spacing: 0px;
+      color: #FFFFFF;
+  }
+  
+  .games__text {
+      color: #FFFFFF;
+      font-family: "Montserrat";
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 32px;
+      letter-spacing: 0px;
+  }
+  
+  .img__games {
+      max-height: 1060px;
+      max-width: 1200px;
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+      gap: 32px;
+      align-items: start;
+      margin-top: 72px;
+  }
+  
+  .img__card {
+      display: flex;
+      flex-direction: column;
+      grid-column: span 4;
+      background-color: #FFFFFF ;
+      border-radius: 30px;
+  }
+  
+  .img__item {
+      border-radius: 30px;
+      height: 314px;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+  }
+  
+  .img__card_top {
+      margin-top: -40px;
+  }
+  
+  .img__item_1 {
+      background: url(img/card1.svg);
+  }
+  .img__item_2 {
+      background: url(img/card2.svg);
+  }
+  .img__item_3{
+      background: url(img/card3.svg);
+  }
+  .img__item_4{
+      background: url(img/card4.svg);
+      height: 315px;
+      background-repeat: no-repeat;
+  }
+  .img__item_5{
+      background: url(img/card5.svg);
+  }
+  .img__item_6{
+      background: url(img/card6.svg);
+  }
+  
+  .stone {
+      position: relative;
+      bottom: 410px;
+      width: 82px;
+      left: 150px;
+      height: 89px;
+     
+  }
+  
+  .img__number {
+      width: 111px;
+      height: 36px;
+      color: rgb(32, 32, 39);
+      font-size: 16px;
+      font-weight: 500;
+      border-radius: 52.58px;
+      background: rgb(247, 247, 247);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 13px;
+      margin-left: 32px;
+      margin-bottom: 10px;
+  }
+  
+  .img__text {
+      color: rgb(32, 32, 39);
+      font-size: 32px;
+      font-weight: 700;
+      text-align: left;
+      padding: 0 36px 32px;
+      max-width: 372px;
+      text-decoration: none;
+      line-height: 39.01px;
+  }
