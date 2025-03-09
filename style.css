@@ -79,6 +79,7 @@
       background-color: #BCEC30;
       height: 90px;
       backdrop-filter: blur(50px);
+      gap: 51px;
       overflow: hidden;
   
   }
@@ -88,7 +89,9 @@
       font-weight: 700;
       font-size: 30px;
       line-height: 33px;
-      letter-spacing: 4%;
+      letter-spacing: 4px;
+      flex-shrink: 0;
+      text-transform: uppercase;
   }
   
   .games__content {
@@ -160,7 +163,7 @@
       background: url(img/card3.svg);
   }
   .img__item_4{
-      background: url(img/card4.svg);
+      background: url(img/buy.png) center, url(img/card4.svg);
       height: 315px;
       background-repeat: no-repeat;
   }
