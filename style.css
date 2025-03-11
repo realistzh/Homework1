@@ -69,3 +69,31 @@
       height: 66px;
       margin-top: 48px;
   }
+
+  .scrollbar {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: center;
+    background-color: #BCEC30;
+    height: 90px;
+    backdrop-filter: blur(50px);
+    gap: 51px;
+    overflow: hidden;
+}
+
+.scrollbar__text{
+    font-family: "Montserrat";
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 33px;
+    letter-spacing: 4%;
+    flex-shrink: 0;
+    text-transform: uppercase;
+}
+
+
+.star {
+  flex: none;
+  flex-shrink: 0;
+}
