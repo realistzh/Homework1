@@ -1,0 +1,71 @@
+* { margin: 0px;
+    padding: 0px;
+  }
+  
+  body {
+      font-family: "Montserrat", sans-serif;
+  }
+  
+  a {text-decoration: none;}
+  
+  .center {
+      padding-left: calc(50% - 600px);
+      padding-right: calc(50% - 600px);
+  }
+  
+  button{
+      cursor: pointer;
+  }
+  .header {
+      height: 800px;
+      background: #E1FF8F;
+      background-image: url(img/fon.svg), url(img/starfon.svg), url(img/Star\ 4.svg);
+      background-position: 1px 1000px, calc(100% - 0px) calc(1000% - 20px), 230% -330px;
+      background-repeat: no-repeat;
+  }
+  
+  .header__welcome {
+      font-family: "Montserrat";
+      font-weight: 700;
+      font-size: 64px;
+      line-height: 78.02px;
+      letter-spacing: 0px;
+      padding-top: 196px;
+  }
+  
+  .button-go:hover {
+      background-color: #FFFFFF;
+      color: #202027;
+  }
+  
+  .header__text {
+      font-family: "Montserrat";
+      font-size: 24px;
+      line-height: 32px;
+      letter-spacing: 0px;
+      padding-top: 24px;
+  }
+  
+  .header__text-go {
+      font-family: "Montserrat";
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 32px;
+      letter-spacing: 0px;
+  }
+  
+  .button-go {
+      background-color: #202027;
+      border: 1px solid #202027;
+      box-sizing: border-box;
+      border-radius: 60px;
+      color: #ffffff;
+      font-family: "Montserrat";
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 34.01px;
+      text-align: center;
+      width: 247px;
+      height: 66px;
+      margin-top: 48px;
+  }
