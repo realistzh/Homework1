@@ -16,6 +16,9 @@
   a {
       cursor: pointer;
   }
+
+    /* Заголовок сайта */
+
   .header {
       height: 800px;
       background: #E1FF8F;
@@ -44,6 +47,7 @@
       line-height: 32px;
       letter-spacing: 0px;
       padding-top: 24px;
+      margin-bottom: 64px;
   }
   
   .header__text-go {
@@ -52,7 +56,6 @@
       font-size: 24px;
       line-height: 32px;
       letter-spacing: 0px;
-      padding-bottom: 48px;
   }
   
   .button-go {
@@ -71,6 +74,8 @@
       padding-left: 65px;
       padding-bottom: 16px;
   }
+
+    /* Полоса для анимации */
 
   .scrollbar {
     display: flex;
@@ -98,6 +103,8 @@
   flex: none;
   flex-shrink: 0;
 }
+
+/* Блок "Об играх" */
 
 .games {
     display: flex;
@@ -213,3 +220,155 @@
     text-decoration: none;
     line-height: 39.01px;
 }
+
+/* Блок "Мини-игры" */
+
+.game {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-self: stretch;
+    background: #202027;
+    padding-top: 50px;
+  }
+  
+  .game__title {
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 78.02px;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+  }
+  
+  .game__description {
+    color: #202027;
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0px;
+    vertical-align: middle;
+  }
+
+  .game__unit {
+    display: block;
+    margin-left: auto;
+  }
+
+  .game__img-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 32px;
+    margin-top: 72px;
+    margin-bottom: 144px;
+  }
+  
+  .game__card {
+    display: flex;
+    background-color: #FFFFFF ;
+    border-radius: 30px;
+    height: 500px;
+    width: 1200px;
+  }
+  .game__card-back {
+    display: flex;
+    flex-direction: row-reverse;
+    background-color: #FFFFFF ;
+    border-radius: 30px;
+    height: 500px;
+    width: 1200px;
+  }
+  
+  .game__item {
+    border-radius: 30px;
+    height: 314px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  .game__card--top {
+    margin-top: -40px;
+  }
+  
+  
+  .game__box{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    margin: 48px 186px 203px 48px
+  }
+  .stone {
+    position: relative;
+    bottom: 410px;
+    width: 82px;
+    left: 150px;
+    height: 89px; 
+  }
+  
+  .game__number {
+    width: 111px;
+    height: 36px;
+    color: rgb(32, 32, 39);
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 52.58px;
+    background: rgb(247, 247, 247);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 13px;
+    margin-left: 32px;
+    margin-bottom: 10px;
+  }
+  
+  .game__text{
+    color:  #202027;
+    text-align: left;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 100%;
+    letter-spacing: 0px;
+    vertical-align: middle;
+  }
+  
+  .game__button {
+    background-color: #202027;
+    border: 1px solid #202027;
+    box-sizing: border-box;
+    border-radius: 60px;
+    color: #ffffff;
+    font-family: "Montserrat";
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 34.01px;
+    text-align: center;
+    padding-top: 16px;
+    padding-right: 65px;
+    padding-left: 65px;
+    padding-bottom: 16px;
+  }
+  
+  .game__button:hover {
+    background-color: #FFFFFF;
+    color: #202027;
+  }
+  
+/*  Подвал сайта */
+
+.footer {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 0px;
+    text-align: center;
+    vertical-align: middle;
+    width: 1441;
+    padding: 61px 61px;
+    background-color: #BCEC30;
+  }
