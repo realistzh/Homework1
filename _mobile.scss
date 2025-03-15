@@ -1,0 +1,198 @@
+@media (max-width: 767px) {
+    .center {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    // Заголовок сайта
+
+    .header {
+            background-image: none;
+            text-align: center;
+            background-image: url(img/Vector.svg), url(img/Star\ 2.svg), url(img/Star\ 3.svg), url(img/Star\ 4.svg), url(img/Star\ 5.svg); 
+            background-position: (215px 0px, 37px 97px, 91px 64px, 250px 675px, 215px 640px);
+            
+
+        &__welcome {
+            font-weight: 700;
+            font-size: 40px;
+            text-align: center;
+            line-height: 125%;
+        }  
+
+        &__text {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 100%;
+            letter-spacing: 0px;
+            text-align: center;
+            vertical-align: middle;
+        }
+        
+        &__text-go {
+            font-size: 16px;
+            line-height: 0;
+           
+        }
+
+    
+    }
+   
+    .button-go {
+        background-color: #202027;
+        border: 1px solid #202027;
+        box-sizing: border-box;
+        border-radius: 60px;
+        color: #ffffff;
+        font-family: "Montserrat";
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 142%;
+        text-align: center;
+        padding: 16px 103.5px 16px 103.5px;
+        align-items: center;
+        justify-content: center;
+    
+    }
+
+// Полоса прокручивания
+
+    .scrollbar {
+        max-width: 425px; 
+        height: 51px;
+        gap: 27px;
+        overflow: hidden;
+       
+        
+
+        &__text {
+           
+            font-weight: 700;
+            font-size: 16px;
+            vertical-align: middle;
+            text-transform: uppercase;
+            margin: auto;
+            text-align: center;
+            margin-left: 24px;
+        }
+
+    }
+
+    .star {
+        width: 19px;
+        height: 19px;
+
+    }
+    .games {
+        display: none;
+    }
+
+// Блок "мини-игры"
+
+    .game { 
+            gap: 0px;
+
+            &__title {
+                font-weight: 700;
+                font-size: 40px;
+                line-height: 100%;
+                letter-spacing: 0px;
+                vertical-align: middle;
+
+            }
+            
+            &__img-container {
+                margin-top: 48px;
+                margin-bottom: 48px;
+            }
+
+            &__card {
+                display: flex;
+                background-color: #FFFFFF;
+                border-radius: 30px;
+                flex-direction: column-reverse;
+                height: inherit;
+                width: inherit;
+            }
+
+            &__box {
+                display: flex;
+                flex-direction: column;
+                gap: 32px;
+                flex-wrap: nowrap;
+                justify-content: space-evenly;
+                align-items: revert;
+                margin: auto;
+                margin-top: 29px;
+                margin-bottom: 32.67px;
+            }
+
+            &__text {
+                font-weight: 700;
+                font-size: 32px;
+                line-height: 100%;
+                letter-spacing: 0px;
+                vertical-align: middle;
+            }
+
+            &__description{
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 100%;
+                letter-spacing: 0px;
+                vertical-align: middle;
+            }
+
+
+            &__button {
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 142%;
+                letter-spacing: 0%;
+                text-align: center;
+                padding: 16px 110.5px 16px 110.5px ;
+            }
+            
+
+            &__unit {
+                display: block;
+                margin-left: inherit; 
+            }
+    }
+    
+    .game {
+        &__card-back {
+        display: flex;
+        background-color: #FFFFFF;
+        border-radius: 30px;
+        flex-direction: column-reverse;
+        height: inherit;
+        width: inherit;}
+
+
+        &__box {
+            display: flex;
+            flex-direction: column;
+            gap: 32px;
+            flex-wrap: nowrap;
+            justify-content: space-evenly;
+            align-items: revert;
+            margin: auto;
+            margin-top: 29px;
+            margin-bottom: 32.67px;
+            margin-left: 29px;
+            margin-right: 29px;
+
+        }
+
+    }
+    
+// Подвал сайта
+
+    .footer {
+        font-weight: 600;
+        font-size: 16px;
+        padding: 40px 92px;
+    }
+}    
+
