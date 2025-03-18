@@ -1,97 +1,105 @@
-* { margin: 0px;
-    padding: 0px;
-  }
-  
-  body {
-      font-family: "Montserrat", sans-serif;
-  }
-  
-  a {text-decoration: none;}
-  
-  .center {
-      padding-left: calc(50% - 600px);
-      padding-right: calc(50% - 600px);
-  }
-  
-  a {
-      cursor: pointer;
-  }
-  .header {
-      height: 800px;
-      background: #E1FF8F;
-      background-image: url(img/fon.svg), url(img/starfon.svg), url(img/Star\ 4.svg);
-      background-position: 1px 1000px, calc(100% - 0px) calc(1000% - 20px), 230% -330px;
-      background-repeat: no-repeat;
-  }
-  
-  .header__welcome {
-      font-family: "Montserrat";
-      font-weight: 700;
-      font-size: 64px;
-      line-height: 78.02px;
-      letter-spacing: 0px;
-      padding-top: 196px;
-  }
-  
-  .button-go:hover {
-      background-color: #FFFFFF;
-      color: #202027;
-  }
-  
-  .header__text {
-      font-family: "Montserrat";
-      font-size: 24px;
-      line-height: 32px;
-      letter-spacing: 0px;
-      padding-top: 24px;
-  }
-  
-  .header__text-go {
-      font-family: "Montserrat";
-      font-weight: 600;
-      font-size: 24px;
-      line-height: 32px;
-      letter-spacing: 0px;
-      padding-bottom: 48px;
-  }
-  
-  .button-go {
-      background-color: #202027;
-      border: 1px solid #202027;
-      box-sizing: border-box;
-      border-radius: 60px;
-      color: #ffffff;
-      font-family: "Montserrat";
-      font-weight: 600;
-      font-size: 24px;
-      line-height: 34.01px;
-      text-align: center;
-      padding-top: 16px;
-      padding-right: 65px;
-      padding-left: 65px;
-      padding-bottom: 16px;
-  }
-
-  .scrollbar {
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: row;
-    align-items: center;
-    background-color: #BCEC30;
-    height: 90px;
-    backdrop-filter: blur(50px);
-    gap: 51px;
-    overflow: hidden;
+@charset "UTF-8";
+* {
+  margin: 0px;
+  padding: 0px;
 }
 
-.scrollbar__text{
-    font-family: "Montserrat";
-    font-weight: 700;
-    font-size: 30px;
-    line-height: 33px;
-    letter-spacing: 4%;
-    flex-shrink: 0;
-    text-transform: uppercase;
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.center {
+  padding-left: calc(50% - 600px);
+  padding-right: calc(50% - 600px);
+}
+
+a {
+  cursor: pointer;
+}
+
+/* Заголовок сайта */
+.header {
+  height: 800px;
+  background: #E1FF8F;
+  background-image: url(img/fon.svg), url(img/starfon.svg), url(img/Star\ 4.svg);
+  background-position: 1px 1000px, calc(100% - 0px) calc(1000% - 20px), 230% -330px;
+  background-repeat: no-repeat;
+}
+
+.header__welcome {
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 78.02px;
+  letter-spacing: 0px;
+  padding-top: 196px;
+}
+
+.button-go:hover {
+  background-color: #FFFFFF;
+  color: #202027;
+}
+
+.header__text {
+  font-family: "Montserrat";
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0px;
+  padding-top: 24px;
+  margin-bottom: 64px;
+}
+
+.header__text-go {
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0px;
+}
+
+.button-go {
+  background-color: #202027;
+  border: 1px solid #202027;
+  box-sizing: border-box;
+  border-radius: 60px;
+  color: #ffffff;
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 34.01px;
+  text-align: center;
+  padding-top: 16px;
+  padding-right: 65px;
+  padding-left: 65px;
+  padding-bottom: 16px;
+}
+
+/* Полоса для анимации */
+.scrollbar {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  align-items: center;
+  background-color: #BCEC30;
+  height: 90px;
+  -webkit-backdrop-filter: blur(50px);
+          backdrop-filter: blur(50px);
+  gap: 51px;
+  overflow: hidden;
+}
+
+.scrollbar__text {
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 33px;
+  letter-spacing: 4%;
+  flex-shrink: 0;
+  text-transform: uppercase;
 }
 
 .star {
@@ -99,117 +107,426 @@
   flex-shrink: 0;
 }
 
+/* Блок "Об играх" */
 .games {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 24px;
-    align-self: stretch;
-    background: #202027;
-    padding-top: 94px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  align-self: stretch;
+  background: #202027;
+  padding-top: 94px;
 }
 
 .games__title {
-    font-family: Montserrat;
-    font-weight: 700;
-    font-size: 64px;
-    line-height: 78.02px;
-    letter-spacing: 0px;
-    color: #FFFFFF;
+  font-family: Montserrat;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 78.02px;
+  letter-spacing: 0px;
+  color: #FFFFFF;
 }
 
 .games__description {
-    color: #FFFFFF;
-    font-family: "Montserrat";
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 32px;
-    letter-spacing: 0px;
+  color: #FFFFFF;
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0px;
 }
 
 .games__img-container {
-    max-height: 1060px;
-    max-width: 1200px;
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    gap: 32px;
-    align-items: start;
-    margin-top: 72px;
+  max-height: 1060px;
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 32px;
+  align-items: start;
+  margin-top: 72px;
 }
 
 .games__card {
-    display: flex;
-    flex-direction: column;
-    grid-column: span 4;
-    background-color: #FFFFFF ;
-    border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  grid-column: span 4;
+  background-color: #FFFFFF;
+  border-radius: 30px;
 }
 
 .games__item {
-    border-radius: 30px;
-    height: 314px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+  border-radius: 30px;
+  height: 314px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .games__card--top {
-    margin-top: -40px;
+  margin-top: -40px;
 }
 
 .games__item--1 {
-    background: url(img/card1.svg);
+  background: url(img/card1.svg);
 }
+
 .games__item--2 {
-    background: url(img/card2.svg);
+  background: url(img/card2.svg);
 }
-.games__item--3{
-    background: url(img/card3.svg);
+
+.games__item--3 {
+  background: url(img/card3.svg);
 }
-.games__item--4{
-    background: url(img/buy.png) center, url(img/card4.svg);
-    height: 315px;
-    background-repeat: no-repeat;
+
+.games__item--4 {
+  background: url(img/buy.png) center, url(img/card4.svg);
+  height: 315px;
+  background-repeat: no-repeat;
 }
-.games__item--5{
-    background: url(img/card5.svg);
+
+.games__item--5 {
+  background: url(img/card5.svg);
 }
-.games__item--6{
-    background: url(img/card6.svg);
+
+.games__item--6 {
+  background: url(img/card6.svg);
 }
 
 .stone {
-    position: relative;
-    bottom: 410px;
-    width: 82px;
-    left: 150px;
-    height: 89px; 
+  position: relative;
+  bottom: 410px;
+  width: 82px;
+  left: 150px;
+  height: 89px;
 }
 
 .games__number {
-    width: 111px;
-    height: 36px;
-    color: rgb(32, 32, 39);
-    font-size: 16px;
-    font-weight: 500;
-    border-radius: 52.58px;
-    background: rgb(247, 247, 247);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 13px;
-    margin-left: 32px;
-    margin-bottom: 10px;
+  width: 111px;
+  height: 36px;
+  color: rgb(32, 32, 39);
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 52.58px;
+  background: rgb(247, 247, 247);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 13px;
+  margin-left: 32px;
+  margin-bottom: 10px;
 }
 
-.games__text{
-    color: rgb(32, 32, 39);
-    font-size: 32px;
-    font-weight: 700;
-    text-align: left;
-    padding: 0 36px 32px;
-    max-width: 372px;
-    text-decoration: none;
-    line-height: 39.01px;
+.games__text {
+  color: rgb(32, 32, 39);
+  font-size: 32px;
+  font-weight: 700;
+  text-align: left;
+  padding: 0 36px 32px;
+  max-width: 372px;
+  text-decoration: none;
+  line-height: 39.01px;
 }
+
+/* Блок "Мини-игры" */
+.game {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-self: stretch;
+  background: #202027;
+  padding-top: 50px;
+}
+
+.game__title {
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 78.02px;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+}
+
+.game__description {
+  color: #202027;
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0px;
+  vertical-align: middle;
+}
+
+.game__unit {
+  display: block;
+  margin-left: auto;
+}
+
+.game__img-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 32px;
+  margin-top: 72px;
+  margin-bottom: 144px;
+}
+
+.game__card {
+  display: flex;
+  background-color: #FFFFFF;
+  border-radius: 30px;
+  height: 500px;
+  width: 1200px;
+}
+
+.game__card-back {
+  display: flex;
+  flex-direction: row-reverse;
+  background-color: #FFFFFF;
+  border-radius: 30px;
+  height: 500px;
+  width: 1200px;
+}
+
+.game__item {
+  border-radius: 30px;
+  height: 314px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.game__card--top {
+  margin-top: -40px;
+}
+
+.game__box {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  margin: 48px 186px 203px 48px;
+}
+
+.stone {
+  position: relative;
+  bottom: 410px;
+  width: 82px;
+  left: 150px;
+  height: 89px;
+}
+
+.game__number {
+  width: 111px;
+  height: 36px;
+  color: rgb(32, 32, 39);
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 52.58px;
+  background: rgb(247, 247, 247);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 13px;
+  margin-left: 32px;
+  margin-bottom: 10px;
+}
+
+.game__text {
+  color: #202027;
+  text-align: left;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 100%;
+  letter-spacing: 0px;
+  vertical-align: middle;
+}
+
+.game__button {
+  background-color: #202027;
+  border: 1px solid #202027;
+  box-sizing: border-box;
+  border-radius: 60px;
+  color: #ffffff;
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 34.01px;
+  text-align: center;
+  padding-top: 16px;
+  padding-right: 65px;
+  padding-left: 65px;
+  padding-bottom: 16px;
+}
+
+.game__button:hover {
+  background-color: #FFFFFF;
+  color: #202027;
+}
+
+/*  Подвал сайта */
+.footer {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 100%;
+  letter-spacing: 0px;
+  text-align: center;
+  vertical-align: middle;
+  width: 1441;
+  padding: 61px 61px;
+  background-color: #BCEC30;
+}
+
+@media (max-width: 767px) {
+  .center {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .header {
+    background-image: none;
+    text-align: center;
+    background-image: url(img/Vector.svg), url(img/Star\ 2.svg), url(img/Star\ 3.svg), url(img/Star\ 4.svg), url(img/Star\ 5.svg);
+    background-position: 215px 0px, 37px 97px, 91px 64px, 250px 675px, 215px 640px;
+  }
+  .header__welcome {
+    font-weight: 700;
+    font-size: 40px;
+    text-align: center;
+    line-height: 125%;
+  }
+  .header__text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0px;
+    text-align: center;
+    vertical-align: middle;
+  }
+  .header__text-go {
+    font-size: 16px;
+    line-height: 0;
+  }
+  .button-go {
+    background-color: #202027;
+    border: 1px solid #202027;
+    box-sizing: border-box;
+    border-radius: 60px;
+    color: #ffffff;
+    font-family: "Montserrat";
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 142%;
+    text-align: center;
+    padding: 16px 103.5px 16px 103.5px;
+    align-items: center;
+    justify-content: center;
+  }
+  .scrollbar {
+    max-width: 425px;
+    height: 51px;
+    gap: 27px;
+    overflow: hidden;
+  }
+  .scrollbar__text {
+    font-weight: 700;
+    font-size: 16px;
+    vertical-align: middle;
+    text-transform: uppercase;
+    margin: auto;
+    text-align: center;
+    margin-left: 24px;
+  }
+  .star {
+    width: 19px;
+    height: 19px;
+  }
+  .games {
+    display: none;
+  }
+  .game {
+    gap: 0px;
+  }
+  .game__title {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 100%;
+    letter-spacing: 0px;
+    vertical-align: middle;
+  }
+  .game__img-container {
+    margin-top: 48px;
+    margin-bottom: 48px;
+  }
+  .game__card {
+    display: flex;
+    background-color: #FFFFFF;
+    border-radius: 30px;
+    flex-direction: column-reverse;
+    height: inherit;
+    width: inherit;
+  }
+  .game__box {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: revert;
+    margin: auto;
+    margin-top: 29px;
+    margin-bottom: 32.67px;
+  }
+  .game__text {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 100%;
+    letter-spacing: 0px;
+    vertical-align: middle;
+  }
+  .game__description {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0px;
+    vertical-align: middle;
+  }
+  .game__button {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 142%;
+    letter-spacing: 0%;
+    text-align: center;
+    padding: 16px 110.5px 16px 110.5px;
+  }
+  .game__unit {
+    display: block;
+    margin-left: inherit;
+  }
+  .game__card-back {
+    display: flex;
+    background-color: #FFFFFF;
+    border-radius: 30px;
+    flex-direction: column-reverse;
+    height: inherit;
+    width: inherit;
+  }
+  .game__box {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: revert;
+    margin: auto;
+    margin-top: 29px;
+    margin-bottom: 32.67px;
+    margin-left: 29px;
+    margin-right: 29px;
+  }
+  .footer {
+    font-weight: 600;
+    font-size: 16px;
+    padding: 40px 92px;
+  }
+}/*# sourceMappingURL=style.css.map */
