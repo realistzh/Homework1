@@ -25,8 +25,9 @@ a {
 .header {
   height: 710px;
   background: #E1FF8F;
-  background: url(img/Star\ 3.svg) left 63px top 94px/35px no-repeat, url(img/Star\ 5.svg) right 63px top 94px/57px no-repeat, url(img/Star\ 2.svg) bottom right/37px no-repeat, url(img/Star\ 4.svg) bottom right/84px no-repeat, url(img/largestar2.png) right -350px/1074px 1130px no-repeat, url(img/fon.svg) center/100% no-repeat;
-  background-position: 23% 10%, 19% 17%, 57% 65%, 61% 75%, 132% 108%;
+  background-image: url(img/starfon.svg), url(img/Star\ 2.svg), url(img/Star\ 3.svg), url(img/Star\ 4.svg), url(img/Star\ 5.svg);
+  background-position: 100% 91%, 18% 19%, 22% 12%, 63% 90%, 59% 76%;
+  background-repeat: no-repeat;
 }
 
 .header__welcome {
@@ -116,8 +117,8 @@ a {
   background: #202027;
   padding-top: 94px;
   background-image: url(imgmini/Star\ 1.svg), url(imgmini/Star\ 11.svg), url(imgmini/Star\ 12.svg);
-  background-position: 78% 13%, 22% 55%, 24% 60%;
   background-repeat: no-repeat;
+  background-position: 83% 12%, 28% 55%, 29% 60%;
 }
 
 .games__title {
@@ -243,9 +244,9 @@ a {
   align-self: stretch;
   background: #202027;
   padding-top: 64px;
-  background-image: url(imgmini/Star\ 11.svg), url(imgmini/Star\ 12.svg);
-  background-position: 72% 4%, 75% 5%;
+  background-image: url(imgmini/Star\ 7.svg), url(imgmini/Star\ 6.svg);
   background-repeat: no-repeat;
+  background-position: 69% 3%, 71% 5%;
 }
 
 .game__title {
@@ -437,6 +438,7 @@ a {
     height: 19px;
   }
   .games {
+    background-image: none;
     padding-top: inherit;
   }
   .games__title {
