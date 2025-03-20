@@ -20,12 +20,11 @@
     /* Заголовок сайта */
 
   .header {
-      height: 800px;
+      height: 710px;
       background: #E1FF8F;
-      background-image: url(img/fon.svg), url(img/starfon.svg), url(img/Star\ 4.svg);
-      background-position: 1px 1000px, calc(100% - 0px) calc(1000% - 20px), 230% -330px;
-      background-repeat: no-repeat;
-  }
+      background: url(img/Star\ 3.svg) left 63px top 94px / 35px no-repeat, url(img/Star\ 5.svg) right 63px top 94px / 57px no-repeat, url(img/Star\ 2.svg) bottom right / 37px no-repeat, url(img/Star\ 4.svg) bottom right / 84px no-repeat, url(img/largestar2.png) right -350px / 1074px 1130px no-repeat, url(img/fon.svg) center / 100% no-repeat;
+      background-position: 23% 10%, 19% 17%, 57% 65%, 61% 75%, 132% 108%;
+    }
   
   .header__welcome {
       font-family: "Montserrat";
@@ -34,7 +33,7 @@
       line-height: 78.02px;
       letter-spacing: 0px;
       padding-top: 196px;
-  }
+    }
   
   .button-go:hover {
       background-color: #FFFFFF;
@@ -107,13 +106,16 @@
 /* Блок "Об играх" */
 
 .games {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 24px;
-    align-self: stretch;
-    background: #202027;
-    padding-top: 94px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  align-self: stretch;
+  background: #202027;
+  padding-top: 94px;
+  background-image: url(imgmini/Star\ 1.svg), url(imgmini/Star\ 11.svg), url(imgmini/Star\ 12.svg);
+  background-position: 78% 13%, 22% 55%, 24% 60%;
+  background-repeat: no-repeat;
 }
 
 .games__title {
@@ -142,7 +144,7 @@
     grid-template-rows: repeat(3, 1fr);
     gap: 32px;
     align-items: start;
-    margin-top: 72px;
+    margin-top: 40px;
 }
 
 .games__card {
@@ -151,6 +153,11 @@
     grid-column: span 4;
     background-color: #FFFFFF ;
     border-radius: 30px;
+    transition: 1s; 
+}
+
+.games__card:hover {
+  transform: scale(1.1);
 }
 
 .games__item {
@@ -195,7 +202,7 @@
 }
 
 .games__number {
-    width: 111px;
+    width: 108px;
     height: 36px;
     color: rgb(32, 32, 39);
     font-size: 16px;
@@ -205,9 +212,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 13px;
+    margin-top: 40px;
     margin-left: 32px;
-    margin-bottom: 10px;
+    margin-bottom: 16px;
 }
 
 .games__text{
@@ -229,7 +236,10 @@
     gap: 24px;
     align-self: stretch;
     background: #202027;
-    padding-top: 50px;
+    padding-top: 64px;
+    background-image: url(imgmini/Star\ 11.svg), url(imgmini/Star\ 12.svg);
+    background-position: 72% 4%, 75% 5%;
+    background-repeat: no-repeat;
   }
   
   .game__title {
@@ -260,7 +270,7 @@
     flex-direction: column;
     flex-wrap: nowrap;
     gap: 32px;
-    margin-top: 72px;
+    margin-top: 48px;
     margin-bottom: 144px;
   }
   
@@ -300,7 +310,7 @@
     flex-wrap: nowrap;
     justify-content: space-evenly;
     align-items: flex-start;
-    margin: 48px 186px 203px 48px
+    margin: 48px 100px 85px 48px;
   }
   .stone {
     position: relative;
@@ -348,8 +358,8 @@
     line-height: 34.01px;
     text-align: center;
     padding-top: 16px;
-    padding-right: 65px;
-    padding-left: 65px;
+    padding-right: 75.5px;
+    padding-left: 75.5px;
     padding-bottom: 16px;
   }
   
