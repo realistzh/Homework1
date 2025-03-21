@@ -26,8 +26,9 @@ a {
   height: 710px;
   background: #E1FF8F;
   background-image: url(img/starfon.svg), url(img/Star\ 2.svg), url(img/Star\ 3.svg), url(img/Star\ 4.svg), url(img/Star\ 5.svg);
-  background-position: 100% 91%, 18% 19%, 22% 12%, 63% 90%, 59% 76%;
+  background-position: right 710px bottom -85px, left 771px top 94px, left 869px top 67px, right 1050px top 570px, right 1160px top 540px;
   background-repeat: no-repeat;
+  position: relative;
 }
 
 .header__welcome {
@@ -117,8 +118,9 @@ a {
   background: #202027;
   padding-top: 94px;
   background-image: url(imgmini/Star\ 1.svg), url(imgmini/Star\ 11.svg), url(imgmini/Star\ 12.svg);
+  background-position: right 709px top 104px, left 735px top 770px, left 750px top 825px;
   background-repeat: no-repeat;
-  background-position: 83% 12%, 26% 55%, 28% 60%;
+  padding-bottom: 50px;
 }
 
 .games__title {
@@ -140,11 +142,8 @@ a {
 }
 
 .games__img-container {
-  max-height: 1060px;
-  max-width: 1200px;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: repeat(3, 1fr);
   gap: 32px;
   align-items: start;
   margin-top: 40px;
@@ -243,10 +242,10 @@ a {
   gap: 24px;
   align-self: stretch;
   background: #202027;
-  padding-top: 64px;
+  padding-top: 46px;
   background-image: url(imgmini/Star\ 7.svg), url(imgmini/Star\ 6.svg), url(imgmini/Star\ 10.svg), url(imgmini/Star\ 6.svg);
   background-repeat: no-repeat;
-  background-position: 78% 3%, 82% 5%, 77% 98%, 83% 97%;
+  background-position: right 830px top 91px, right 750px top 131px, right 857px bottom 50px, right 756px bottom 70px;
 }
 
 .game__title {
@@ -265,6 +264,7 @@ a {
   line-height: 32px;
   letter-spacing: 0px;
   vertical-align: middle;
+  padding-bottom: 36px;
 }
 
 .game__unit {
@@ -313,11 +313,9 @@ a {
 .game__box {
   display: flex;
   flex-direction: column;
-  gap: 32px;
   flex-wrap: nowrap;
-  justify-content: space-evenly;
   align-items: flex-start;
-  margin: 48px 100px 85px 48px;
+  margin: 48px 55px 50px 48px;
 }
 
 .stone {
@@ -349,9 +347,9 @@ a {
   text-align: left;
   font-weight: 700;
   font-size: 48px;
-  line-height: 100%;
   letter-spacing: 0px;
   vertical-align: middle;
+  padding-bottom: 24px;
 }
 
 .game__button {

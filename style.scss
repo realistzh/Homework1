@@ -1,353 +1,65 @@
 * { margin: 0px;
-    padding: 0px;
-  }
-  
-  body {
-      font-family: "Montserrat", sans-serif;
-  }
-  
-  a {text-decoration: none;}
-  
-  .center {
-      padding-left: calc(50% - 600px);
-      padding-right: calc(50% - 600px);
-  }
-  
-  a {
-      cursor: pointer;
-  }
-
-    /* Заголовок сайта */
-
-  .header {
-      height: 710px;
-      background: #E1FF8F;
-      background-image: url(img/starfon.svg), url(img/Star\ 2.svg), url(img/Star\ 3.svg), url(img/Star\ 4.svg), url(img/Star\ 5.svg); 
-      background-position: 100% 91%, 18% 19%, 22% 12%, 63% 90%, 59% 76%;
-      background-repeat: no-repeat;
-    }
-  
-  .header__welcome {
-      font-family: "Montserrat";
-      font-weight: 700;
-      font-size: 64px;
-      line-height: 78.02px;
-      letter-spacing: 0px;
-      padding-top: 196px;
-    }
-  
-  .button-go:hover {
-      background-color: #FFFFFF;
-      color: #202027;
-  }
-  
-  .header__text {
-      font-family: "Montserrat";
-      font-size: 24px;
-      line-height: 32px;
-      letter-spacing: 0px;
-      padding-top: 24px;
-      margin-bottom: 64px;
-  }
-  
-  .header__text-go {
-      font-family: "Montserrat";
-      font-weight: 600;
-      font-size: 24px;
-      line-height: 32px;
-      letter-spacing: 0px;
-  }
-  
-  .button-go {
-      background-color: #202027;
-      border: 1px solid #202027;
-      box-sizing: border-box;
-      border-radius: 60px;
-      color: #ffffff;
-      font-family: "Montserrat";
-      font-weight: 600;
-      font-size: 24px;
-      line-height: 34.01px;
-      text-align: center;
-      padding-top: 16px;
-      padding-right: 65px;
-      padding-left: 65px;
-      padding-bottom: 16px;
-  }
-
-    /* Полоса для анимации */
-
-  .scrollbar {
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: row;
-    align-items: center;
-    background-color: #BCEC30;
-    height: 90px;
-    backdrop-filter: blur(50px);
-    gap: 51px;
-    overflow: hidden;
+  padding: 0px;
 }
 
-.scrollbar__text{
-    font-family: "Montserrat";
-    font-weight: 700;
-    font-size: 30px;
-    line-height: 33px;
-    letter-spacing: 4%;
-    flex-shrink: 0;
-    text-transform: uppercase;
+body {
+    font-family: "Montserrat", sans-serif;
 }
 
-.star {
-  flex: none;
-  flex-shrink: 0;
+a {text-decoration: none;}
+
+.center {
+    padding-left: calc(50% - 600px);
+    padding-right: calc(50% - 600px);
 }
 
-/* Блок "Об играх" */
-
-.games {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 24px;
-  align-self: stretch;
-  background: #202027;
-  padding-top: 94px;
-  background-image: url(imgmini/Star\ 1.svg), url(imgmini/Star\ 11.svg), url(imgmini/Star\ 12.svg);
-  background-repeat: no-repeat;
-  background-position: 83% 12%, 26% 55%, 28% 60%;
+a {
+    cursor: pointer;
 }
 
-.games__title {
-    font-family: Montserrat;
-    font-weight: 700;
-    font-size: 64px;
-    line-height: 78.02px;
-    letter-spacing: 0px;
-    color: #FFFFFF;
-}
+  /* Заголовок сайта */
 
-.games__description {
-    color: #FFFFFF;
-    font-family: "Montserrat";
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 32px;
-    letter-spacing: 0px;
-}
-
-.games__img-container {
-    max-height: 1060px;
-    max-width: 1200px;
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    gap: 32px;
-    align-items: start;
-    margin-top: 40px;
-}
-
-.games__card {
-    display: flex;
-    flex-direction: column;
-    grid-column: span 4;
-    background-color: #FFFFFF ;
-    border-radius: 30px;
-    transition: 1s; 
-}
-
-.games__card:hover {
-  transform: scale(1.1);
-}
-
-.games__item {
-    border-radius: 30px;
-    height: 314px;
-    background-size: cover;
+.header {
+    height: 710px;
+    background: #E1FF8F;
+    background-image: url(img/starfon.svg), url(img/Star\ 2.svg), url(img/Star\ 3.svg), url(img/Star\ 4.svg), url(img/Star\ 5.svg); 
+    background-position: right 710px bottom -85px, left 771px top 94px, left 869px top 67px, right 1050px top 570px, right 1160px top 540px;
     background-repeat: no-repeat;
-    background-position: center;
-}
-
-.games__card--top {
-    margin-top: -40px;
-}
-
-.games__item--1 {
-    background: url(img/card1.svg);
-}
-.games__item--2 {
-    background: url(img/card2.svg);
-}
-.games__item--3{
-    background: url(img/card3.svg);
-}
-.games__item--4{
-    background: url(img/buy.png) center, url(img/card4.svg);
-    height: 315px;
-    background-repeat: no-repeat;
-}
-.games__item--5{
-    background: url(img/card5.svg);
-}
-.games__item--6{
-    background: url(img/card6.svg);
-}
-
-.stone {
     position: relative;
-    bottom: 410px;
-    width: 82px;
-    left: 150px;
-    height: 89px; 
-}
-
-.games__number {
-    width: 108px;
-    height: 36px;
-    color: rgb(32, 32, 39);
-    font-size: 16px;
-    font-weight: 500;
-    border-radius: 52.58px;
-    background: rgb(247, 247, 247);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 40px;
-    margin-left: 32px;
-    margin-bottom: 16px;
-}
-
-.games__text{
-    color: rgb(32, 32, 39);
-    font-size: 32px;
-    font-weight: 700;
-    text-align: left;
-    padding: 0 36px 32px;
-    max-width: 372px;
-    text-decoration: none;
-    line-height: 39.01px;
-}
-
-/* Блок "Мини-игры" */
-
-.game {
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-    align-self: stretch;
-    background: #202027;
-    padding-top: 64px;
-    background-image: url(imgmini/Star\ 7.svg), url(imgmini/Star\ 6.svg), url(imgmini/Star\ 10.svg), url(imgmini/Star\ 6.svg);
-    background-repeat: no-repeat;
-    background-position: 78% 3%, 82% 5%, 77% 98%, 83% 97%;
   }
-  
-  .game__title {
+
+.header__welcome {
+    font-family: "Montserrat";
     font-weight: 700;
     font-size: 64px;
     line-height: 78.02px;
     letter-spacing: 0px;
-    color: #FFFFFF;
+    padding-top: 196px;
   }
-  
-  .game__description {
+
+.button-go:hover {
+    background-color: #FFFFFF;
     color: #202027;
+}
+
+.header__text {
     font-family: "Montserrat";
-    font-weight: 400;
     font-size: 24px;
     line-height: 32px;
     letter-spacing: 0px;
-    vertical-align: middle;
-  }
+    padding-top: 24px;
+    margin-bottom: 64px;
+}
 
-  .game__unit {
-    display: block;
-    margin-left: auto;
-  }
-
-  .game__img-container {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    gap: 32px;
-    margin-top: 48px;
-    margin-bottom: 144px;
-  }
-  
-  .game__card {
-    display: flex;
-    background-color: #FFFFFF ;
-    border-radius: 30px;
-    height: 500px;
-    width: 1200px;
-  }
-  .game__card-back {
-    display: flex;
-    flex-direction: row-reverse;
-    background-color: #FFFFFF ;
-    border-radius: 30px;
-    height: 500px;
-    width: 1200px;
-  }
-  
-  .game__item {
-    border-radius: 30px;
-    height: 314px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-  
-  .game__card--top {
-    margin-top: -40px;
-  }
-  
-  
-  .game__box{
-    display: flex;
-    flex-direction: column;
-    gap: 32px;
-    flex-wrap: nowrap;
-    justify-content: space-evenly;
-    align-items: flex-start;
-    margin: 48px 100px 85px 48px;
-  }
-  .stone {
-    position: relative;
-    bottom: 410px;
-    width: 82px;
-    left: 150px;
-    height: 89px; 
-  }
-  
-  .game__number {
-    width: 111px;
-    height: 36px;
-    color: rgb(32, 32, 39);
-    font-size: 16px;
-    font-weight: 500;
-    border-radius: 52.58px;
-    background: rgb(247, 247, 247);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 13px;
-    margin-left: 32px;
-    margin-bottom: 10px;
-  }
-  
-  .game__text{
-    color:  #202027;
-    text-align: left;
-    font-weight: 700;
-    font-size: 48px;
-    line-height: 100%;
+.header__text-go {
+    font-family: "Montserrat";
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
     letter-spacing: 0px;
-    vertical-align: middle;
-  }
-  
-  .game__button {
+}
+
+.button-go {
     background-color: #202027;
     border: 1px solid #202027;
     box-sizing: border-box;
@@ -359,28 +71,315 @@
     line-height: 34.01px;
     text-align: center;
     padding-top: 16px;
-    padding-right: 75.5px;
-    padding-left: 75.5px;
+    padding-right: 65px;
+    padding-left: 65px;
     padding-bottom: 16px;
-  }
-  
-  .game__button:hover {
-    background-color: #FFFFFF;
-    color: #202027;
-  }
-  
+}
+
+  /* Полоса для анимации */
+
+.scrollbar {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  align-items: center;
+  background-color: #BCEC30;
+  height: 90px;
+  backdrop-filter: blur(50px);
+  gap: 51px;
+  overflow: hidden;
+}
+
+.scrollbar__text{
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 33px;
+  letter-spacing: 4%;
+  flex-shrink: 0;
+  text-transform: uppercase;
+}
+
+.star {
+flex: none;
+flex-shrink: 0;
+}
+
+/* Блок "Об играх" */
+
+.games {
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+gap: 24px;
+align-self: stretch;
+background: #202027;
+padding-top: 94px;
+background-image: url(imgmini/Star\ 1.svg), url(imgmini/Star\ 11.svg), url(imgmini/Star\ 12.svg);
+background-position: right 709px top 104px, left 735px top 770px, left 750px top 825px;
+background-repeat: no-repeat;
+padding-bottom: 50px;
+}
+
+.games__title {
+  font-family: Montserrat;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 78.02px;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+}
+
+.games__description {
+  color: #FFFFFF;
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0px;
+}
+
+.games__img-container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 32px;
+  align-items: start;
+  margin-top: 40px;
+}
+
+.games__card {
+  display: flex;
+  flex-direction: column;
+  grid-column: span 4;
+  background-color: #FFFFFF ;
+  border-radius: 30px;
+  transition: 1s; 
+}
+
+.games__card:hover {
+transform: scale(1.1);
+}
+
+.games__item {
+  border-radius: 30px;
+  height: 314px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.games__card--top {
+  margin-top: -40px;
+}
+
+.games__item--1 {
+  background: url(img/card1.svg);
+}
+.games__item--2 {
+  background: url(img/card2.svg);
+}
+.games__item--3{
+  background: url(img/card3.svg);
+}
+.games__item--4{
+  background: url(img/buy.png) center, url(img/card4.svg);
+  height: 315px;
+  background-repeat: no-repeat;
+}
+.games__item--5{
+  background: url(img/card5.svg);
+}
+.games__item--6{
+  background: url(img/card6.svg);
+}
+
+.stone {
+  position: relative;
+  bottom: 410px;
+  width: 82px;
+  left: 150px;
+  height: 89px; 
+}
+
+.games__number {
+  width: 108px;
+  height: 36px;
+  color: rgb(32, 32, 39);
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 52.58px;
+  background: rgb(247, 247, 247);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  margin-left: 32px;
+  margin-bottom: 16px;
+}
+
+.games__text{
+  color: rgb(32, 32, 39);
+  font-size: 32px;
+  font-weight: 700;
+  text-align: left;
+  padding: 0 36px 32px;
+  max-width: 372px;
+  text-decoration: none;
+  line-height: 39.01px;
+}
+
+/* Блок "Мини-игры" */
+
+.game {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-self: stretch;
+  background: #202027;
+  padding-top: 46px;
+  background-image: url(imgmini/Star\ 7.svg), url(imgmini/Star\ 6.svg), url(imgmini/Star\ 10.svg), url(imgmini/Star\ 6.svg);
+  background-repeat: no-repeat;
+  background-position: right 830px top 91px, right 750px top 131px, right 857px bottom 50px, right 756px bottom 70px,;
+}
+
+.game__title {
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 78.02px;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+}
+
+.game__description {
+  color: #202027;
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0px;
+  vertical-align: middle;
+  padding-bottom: 36px;
+}
+
+.game__unit {
+  display: block;
+  margin-left: auto;
+}
+
+.game__img-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 32px;
+  margin-top: 48px;
+  margin-bottom: 144px;
+}
+
+.game__card {
+  display: flex;
+  background-color: #FFFFFF ;
+  border-radius: 30px;
+  height: 500px;
+  width: 1200px;
+}
+.game__card-back {
+  display: flex;
+  flex-direction: row-reverse;
+  background-color: #FFFFFF ;
+  border-radius: 30px;
+  height: 500px;
+  width: 1200px;
+}
+
+.game__item {
+  border-radius: 30px;
+  height: 314px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.game__card--top {
+  margin-top: -40px;
+}
+
+
+.game__box{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  margin: 48px 55px 50px 48px;
+}
+.stone {
+  position: relative;
+  bottom: 410px;
+  width: 82px;
+  left: 150px;
+  height: 89px; 
+}
+
+.game__number {
+  width: 111px;
+  height: 36px;
+  color: rgb(32, 32, 39);
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 52.58px;
+  background: rgb(247, 247, 247);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 13px;
+  margin-left: 32px;
+  margin-bottom: 10px;
+}
+
+.game__text{
+  color:  #202027;
+  text-align: left;
+  font-weight: 700;
+  font-size: 48px;
+  letter-spacing: 0px;
+  vertical-align: middle;
+  padding-bottom: 24px;
+
+}
+
+.game__button {
+  background-color: #202027;
+  border: 1px solid #202027;
+  box-sizing: border-box;
+  border-radius: 60px;
+  color: #ffffff;
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 34.01px;
+  text-align: center;
+  padding-top: 16px;
+  padding-right: 75.5px;
+  padding-left: 75.5px;
+  padding-bottom: 16px;
+}
+
+.game__button:hover {
+  background-color: #FFFFFF;
+  color: #202027;
+}
+
 /*  Подвал сайта */
 
 .footer {
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 100%;
-    letter-spacing: 0px;
-    text-align: center;
-    vertical-align: middle;
-    width: 1441;
-    padding: 61px 61px;
-    background-color: #BCEC30;
-  }
-  
-  @import "mobile";
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 100%;
+  letter-spacing: 0px;
+  text-align: center;
+  vertical-align: middle;
+  width: 1441;
+  padding: 61px 61px;
+  background-color: #BCEC30;
+}
+
+@import "mobile";
