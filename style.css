@@ -26,7 +26,7 @@ a {
   height: 710px;
   background: #E1FF8F;
   background-image: url(img/starfon.svg), url(img/Star\ 2.svg), url(img/Star\ 3.svg), url(img/Star\ 4.svg), url(img/Star\ 5.svg);
-  background-position: right 710px bottom -85px, left 771px top 94px, left 869px top 67px, right 1050px top 570px, right 1160px top 540px;
+  background-position: right 0px top 0px, left 64px top 94px, left 156px top 69px, right 344px bottom 149px, right 455px bottom 255px;
   background-repeat: no-repeat;
   position: relative;
 }
@@ -118,7 +118,7 @@ a {
   background: #202027;
   padding-top: 94px;
   background-image: url(imgmini/Star\ 1.svg), url(imgmini/Star\ 11.svg), url(imgmini/Star\ 12.svg);
-  background-position: right 709px top 104px, left 735px top 770px, left 750px top 825px;
+  background-position: right 77px top 142.56px, left 25px top 770px, left 40px top 822px;
   background-repeat: no-repeat;
   padding-bottom: 50px;
 }
@@ -245,7 +245,7 @@ a {
   padding-top: 46px;
   background-image: url(imgmini/Star\ 7.svg), url(imgmini/Star\ 6.svg), url(imgmini/Star\ 10.svg), url(imgmini/Star\ 6.svg);
   background-repeat: no-repeat;
-  background-position: right 830px top 91px, right 750px top 131px, right 857px bottom 50px, right 756px bottom 70px;
+  background-position: right 123.79px top 93px, right 44.91px top 126px, right 150px bottom 45px, right 52px bottom 65px;
 }
 
 .game__title {
