@@ -11,12 +11,17 @@
         text-align: center;
         background-image: url(img/Vector.svg), url(img/Star\ 2.svg), url(img/Star\ 3.svg), url(img/Star\ 4.svg), url(img/Star\ 5.svg); 
         background-position: 863px 0px, 37px 97px, 91px 64px, 820px 572px, 775px 536px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
 
         &__welcome {
+            padding-top: 147px;
             font-weight: 700;
             font-size: 40px;
             text-align: center;
             line-height: 125%;
+
         }  
 
         &__text {
@@ -32,9 +37,8 @@
             font-size: 16px;
             line-height: 0;
         }
-
-    
     }
+
 
     .scrollbar {
         max-width: none; 
@@ -64,6 +68,7 @@
  // Блок "Об играх"
 
     .games {
+        display: none;
         background-image: none;
         padding-top: inherit;
 
@@ -80,7 +85,7 @@
             flex-direction: column;
             max-height: none;
             align-items: normal;
-            gap: 32px;
+            gap: 24px;
             margin-bottom: 32px;
             margin-top: inherit;
             justify-content: center;
@@ -105,10 +110,22 @@
     
     }
     .game { 
-        display: none;
+        background-image: none;
         gap: 0px;
-    }
 
+        &__card {
+            width: auto;
+        }
+        
+        &__card-back {
+            width: auto;
+        }
+
+        &__unit{
+
+        }
+
+    }
 }
 
 @media (min-width: 768px) and (max-width: 833px)
@@ -127,6 +144,7 @@
         background-position: 609px 0px, 37px 97px, 91px 64px, 634px 559px, 578px 511px;
 
         &__welcome {
+            padding-top: 147px;
             font-weight: 700;
             font-size: 40px;
             text-align: center;
@@ -197,7 +215,7 @@
     // Блок "Об играх"
 
     .games {
-        
+        display: none;
         padding-top: inherit;
 
         &__title {
@@ -213,7 +231,7 @@
             flex-direction: column;
             max-height: none;
             align-items: normal;
-            gap: 32px;
+            gap: 24px;
             margin-bottom: 32px;
             margin-top: inherit;
         } 
@@ -241,7 +259,7 @@
     // Блок "Мини-игры"
 
     .game { 
-        display: none;
+
         gap: 0px;
 
         &__title {
@@ -270,7 +288,6 @@
         &__box {
             display: flex;
             flex-direction: column;
-            gap: 32px;
             flex-wrap: nowrap;
             justify-content: space-evenly;
             align-items: revert;
@@ -325,7 +342,6 @@
         &__box {
             display: flex;
             flex-direction: column;
-            gap: 32px;
             flex-wrap: nowrap;
             justify-content: space-evenly;
             align-items: revert;
@@ -369,6 +385,7 @@
         background-position: (216px 0px, 37px 97px, 91px 64px, 300px 650px, 270px 626px);
            
         &__welcome {
+            padding-top: 147px;
             font-weight: 700;
             font-size: 40px;
             text-align: center;
@@ -442,7 +459,7 @@
 
 // Блок "Об играх"
 
-.games {
+.games {display: none;
     padding-top: inherit;
 
     &__title {
@@ -458,7 +475,7 @@
         flex-direction: column;
         max-height: none;
         align-items: normal;
-        gap: 32px;
+        gap: 24px;
         margin-bottom: 32px;
         margin-top: inherit;
     } 
@@ -486,13 +503,13 @@
 
 // Блок "Мини-игры"
 
-    .game { display: none;
+    .game {
             gap: 0px;
 
             &__title {
                 font-weight: 700;
                 font-size: 40px;
-                line-height: 100%;
+                line-height: 134%;
                 letter-spacing: 0px;
                 vertical-align: middle;
 
@@ -515,7 +532,6 @@
             &__box {
                 display: flex;
                 flex-direction: column;
-                gap: 32px;
                 flex-wrap: nowrap;
                 justify-content: space-evenly;
                 align-items: revert;
@@ -570,7 +586,6 @@
         &__box {
             display: flex;
             flex-direction: column;
-            gap: 32px;
             flex-wrap: nowrap;
             justify-content: space-evenly;
             align-items: revert;
@@ -607,7 +622,26 @@
         background-image: none;
         text-align: center;
         background-image: url(imgmob/Starmob\ 1.svg), url(imgmob/Starmob\ 2.svg), url(imgmob/Starmob\ 3.svg), url(imgmob/Starmob\ 4.svg), url(imgmob/Starmob\ 5.svg); 
-        background-position: (265px 0px, 37px 97px, 91px 64px, 300px 650px, 270px 626px);
+        background-position: (265px 0px, 37px 97px, 91px 64px, 305px 580px, 272px 557px);
+        display: fleX;
+        flex-direction: column;
+        align-items: center;
+
+        &__welcome {
+            padding-top: 147px;
+            width: 262px;
+        }
+
+        &__text {
+            width: 296px;
+            margin-bottom: 36px;
+            margin-top: 8px;
+        }
+
+    }
+
+    .game {
+        background-image: none;
     }
 }
 
@@ -623,11 +657,81 @@
     // Заголовок сайта
 
     .header {
-
+        height: 649px;
         background-image: none;
         text-align: center;
         background-image: url(imgmob/Starmob\ 1.svg), url(imgmob/Starmob\ 2.svg), url(imgmob/Starmob\ 3.svg), url(imgmob/Starmob\ 4.svg), url(imgmob/Starmob\ 5.svg); 
-        background-position: (215px 0px, 37px 97px, 91px 64px, 300px 650px, 270px 626px);
+        background-position: (215px 0px, 37px 97px, 91px 64px, 305px 580px, 272px 557px);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &__welcome {
+            padding-top: 147px;
+            width: 262px;
+        }
+        &__text {
+            width: 296px;
+            margin-bottom: 36px;
+            margin-top: 8px;
+        }
     }
+
+
+    .game {
+        background-image: none;
+    
+        &__card-back {
+        display: flex;
+        background-color: #FFFFFF;
+        border-radius: 30px;
+        flex-direction: column-reverse;
+        height: inherit;
+        width: inherit;}
+
+
+        &__box {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            align-items: revert;
+            margin: auto;
+        }
+        &__unit {
+            border-radius: 30px;
+        }
+
+        &__text {
+            margin-top: 29.04px;
+            margin-left: 29.04px;
+            margin-right: 29.04px;
+            line-height: 113%;
+        }
+        
+        &__description {
+            margin-left: 29.04px;
+            margin-right: 29.04px;
+        }
+
+        &__button {
+            margin-right: 24.9px;
+            margin-left: 24.9px;
+            margin-bottom: 32.67px;
+        }
+        
+
+        &__img-container {
+            gap: 24px;
+        }
+
+        
+    }
+      
+          
+    
+
+
+
+
 }
 
