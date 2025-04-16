@@ -82,6 +82,20 @@ a {
 }
 
 /* Полоса для анимации */
+@keyframes scrollbar {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(100%);
+  }
+}
+.scrollbar {
+  display: inline-block;
+  white-space: nowrap;
+  animation: scrollbar 20s linear infinite;
+}
+
 .scrollbar {
   display: flex;
   justify-content: space-evenly;
