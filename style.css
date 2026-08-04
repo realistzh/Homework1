@@ -87,13 +87,14 @@ a {
     transform: translateX(0%);
   }
   to {
-    transform: translateX(100%);
+    transform: translateX(-100%);
   }
 }
 .scrollbar {
   display: inline-block;
   white-space: nowrap;
   animation: scrollbar 20s linear infinite;
+  overflow: hidden;
 }
 
 .scrollbar {
@@ -103,8 +104,7 @@ a {
   align-items: center;
   background-color: #BCEC30;
   height: 90px;
-  -webkit-backdrop-filter: blur(50px);
-          backdrop-filter: blur(50px);
+  backdrop-filter: blur(50px);
   gap: 51px;
   overflow: hidden;
 }
@@ -332,6 +332,14 @@ a {
   flex-wrap: nowrap;
   align-items: flex-start;
   margin: 48px 55px 50px 48px;
+}
+
+.game__boxx {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  margin: 48px 209px 50px 48px;
 }
 
 .stone {
