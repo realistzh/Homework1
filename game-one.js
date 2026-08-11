@@ -1,4 +1,6 @@
 
+/*Игра №1*/
+
 function generateRandomNumber(){
     return Math.floor(Math.random() * 100) + 1;
 }
@@ -19,7 +21,9 @@ function playGame(){
     }
 } 
 
-    
+
+/*Игра №2*/    
+
 function arithmetic(){
 
    const operators = ['+', '-', '*', '/'];
@@ -66,6 +70,7 @@ function arithmetic(){
    }
 }
 
+/*Игра №3*/   
 
 function turnTheTextOver(){
    let userText = prompt(`Введите текст`);
@@ -74,6 +79,8 @@ function turnTheTextOver(){
    userText = userText.join('');
    alert(` Перевёрнутый текст : ${userText}`);
 }
+
+ /*Игра №5*/   
 
 const quiz = [
    {
