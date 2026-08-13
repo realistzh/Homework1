@@ -54,7 +54,7 @@ function arithmetic(){
    } else if (operator === '*'){
       promptMessage = `Умножте ${a} на ${b}`;
    } else {
-      // чтобы деление давало целый результат:
+      // чтобы деление давало целый результат
       // a делаем кратным b
       a = a * b;
       promptMessage = `Разделите ${a} на ${b}`;
