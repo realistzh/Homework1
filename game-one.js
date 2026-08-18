@@ -108,6 +108,59 @@ function turnTheTextOver(){
    alert(` Перевёрнутый текст : ${userText}`);
 }
 
+
+/*Игра №4*/   
+
+function rockPaperScissors() {
+    const options = ['камень', 'ножницы', 'бумага'];
+
+    // 1. Запрашиваем выбор пользователя
+    const input = prompt('Выберите: "камень", "ножницы" или "бумага"');
+
+    if (input === null) {
+        alert('Игра прервана.');
+        return;
+    }
+
+    const userChoice = input.toLowerCase().trim();
+
+    if (!options.includes(userChoice)) {
+        alert('Некорректный ввод. Попробуйте ещё раз.');
+        return;
+    }
+
+    // 2. Генерируем случайный выбор компьютера
+    const randomIndex = Math.floor(Math.random() * options.length);
+    const computerChoice = options[randomIndex];
+
+    // 3. Определяем победителя
+    let result;
+
+    if (userChoice === computerChoice) {
+        result = 'Ничья!';
+    } else if (
+        (userChoice === 'камень' && computerChoice === 'ножницы') ||
+        (userChoice === 'ножницы' && computerChoice === 'бумага') ||
+        (userChoice === 'бумага' && computerChoice === 'камень')
+    ) {
+        result = 'Вы выиграли!';
+    } else {
+        result = 'Вы проиграли!';
+    }
+
+    // 4. Выводим результат
+    alert(
+        `Ваш выбор: ${userChoice}\n` +
+        `Выбор компьютера: ${computerChoice}\n` +
+        `Результат: ${result}`
+    );
+}
+
+
+
+
+
+
  /*Игра №5*/   
 
 const quiz = [
