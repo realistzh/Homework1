@@ -1,49 +1,81 @@
-
+/* Игра №1 */
+ 
 function generateRandomNumber(){
-    return Math.floor(Math.random() * 100) + 1;
+   return Math.floor(Math.random() * 100) + 1;
 }
-
+ 
 function playGame(){
    let userNumber = null;
-   let randomNumber = generateRandomNumber(); 
-   while(userNumber!==randomNumber){    
-      userNumber = Number(prompt('Веди число от 1 до 100'));
-
-       if (userNumber > randomNumber) {
-          alert('Ваше число больше');
-       } else if(userNumber < randomNumber) {
-          alert('Ваше число меньше');
-       } else{
-          alert('Вы угадали');
-       }
-    }
-} 
-
-    
+   let randomNumber = generateRandomNumber();
+ 
+   while (userNumber !== randomNumber) {
+      const input = prompt('Введите число от 1 до 100');
+ 
+      // обработка отмены
+      if (input === null) {
+         alert('Игра прервана.');
+         return;
+      }
+ 
+      userNumber = Number(input);
+ 
+      // обработка некорректного ввода
+      if (isNaN(userNumber) || userNumber < 1 || userNumber > 100) {
+         alert('Введите корректное число от 1 до 100.');
+         continue;
+      }
+ 
+      if (userNumber > randomNumber) {
+         alert('Ваше число больше');
+      } else if (userNumber < randomNumber) {
+         alert('Ваше число меньше');
+      } else {
+         alert('Вы угадали');
+      }
+   }
+}
+ 
+/* Игра №2   */  
+ 
 function arithmetic(){
-
+ 
    const operators = ['+', '-', '*', '/'];
    let operator = operators[Math.floor(Math.random() * operators.length)];
-
+ 
    let a = Math.floor(Math.random() * 10) + 1; 
    let b  = Math.floor(Math.random() * 10) + 1;
-
+ 
    let promptMessage = "";
-
+ 
    if (operator === '-') {
       promptMessage = `Вычтите ${b} из ${a}`;
-   } else  if (operator === '+'){
+   } else if (operator === '+'){
       promptMessage = `Сложите ${a} и ${b}`; 
    } else if (operator === '*'){
       promptMessage = `Умножте ${a} на ${b}`;
    } else {
-      b = b === 0 ? 1 : b;
+      // чтобы деление давало целый результат
+      // a делаем кратным b
+      a = a * b;
       promptMessage = `Разделите ${a} на ${b}`;
    }
-
-   const userAnswer = Number(prompt(promptMessage));
+ 
+   const input = prompt(promptMessage);
+ 
+   if (input === null) {
+      alert('Игра прервана.');
+      return;
+   }
+ 
+   const userAnswer = Number(input);
+ 
+   if (isNaN(userAnswer)) {
+      alert('Введите корректное число.');
+      return;
+   }
+ 
    let correctAnswer; 
-
+ 
    switch(operator){
       case '+' :
          correctAnswer = a + b;
@@ -58,7 +90,7 @@ function arithmetic(){
          correctAnswer = a / b;
          break;      
    }
-
+ 
    if (userAnswer === correctAnswer){
       alert('Правильно!');
    } else {
@@ -66,6 +98,7 @@ function arithmetic(){
    }
 }
 
+/*Игра №3*/   
 
 function turnTheTextOver(){
    let userText = prompt(`Введите текст`);
@@ -74,6 +107,61 @@ function turnTheTextOver(){
    userText = userText.join('');
    alert(` Перевёрнутый текст : ${userText}`);
 }
+
+
+/*Игра №4*/   
+
+function rockPaperScissors() {
+    const options = ['камень', 'ножницы', 'бумага'];
+
+    // 1. Запрашиваем выбор пользователя
+    const input = prompt('Выберите: "камень", "ножницы" или "бумага"');
+
+    if (input === null) {
+        alert('Игра прервана.');
+        return;
+    }
+
+    const userChoice = input.toLowerCase().trim();
+
+    if (!options.includes(userChoice)) {
+        alert('Некорректный ввод. Попробуйте ещё раз.');
+        return;
+    }
+
+    // 2. Генерируем случайный выбор компьютера
+    const randomIndex = Math.floor(Math.random() * options.length);
+    const computerChoice = options[randomIndex];
+
+    // 3. Определяем победителя
+    let result;
+
+    if (userChoice === computerChoice) {
+        result = 'Ничья!';
+    } else if (
+        (userChoice === 'камень' && computerChoice === 'ножницы') ||
+        (userChoice === 'ножницы' && computerChoice === 'бумага') ||
+        (userChoice === 'бумага' && computerChoice === 'камень')
+    ) {
+        result = 'Вы выиграли!';
+    } else {
+        result = 'Вы проиграли!';
+    }
+
+    // 4. Выводим результат
+    alert(
+        `Ваш выбор: ${userChoice}\n` +
+        `Выбор компьютера: ${computerChoice}\n` +
+        `Результат: ${result}`
+    );
+}
+
+
+
+
+
+
+ /*Игра №5*/   
 
 const quiz = [
    {
