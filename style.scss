@@ -82,28 +82,24 @@ a {
 
   @keyframes scrollbar {
     from { transform: translateX(0%); }
-    to { transform: translateX(-100%); }
+    to { transform: translateX(-50%); }
 
   }
 
 
   .scrollbar { 
     display: inline-block;
-    white-space: nowrap;
-    animation: scrollbar 20s linear infinite;
+    text-wrap: nowrap;
+    animation-name: scrollbar 20s linear infinite;
     overflow: hidden;
-  }
-
-.scrollbar {
-  display: flex;
-  justify-content: space-evenly;
-  flex-direction: row;
-  align-items: center;
-  background-color: #BCEC30;
-  height: 90px;
-  backdrop-filter: blur(50px);
-  gap: 51px;
-  overflow: hidden;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: center;
+    background-color: #BCEC30;
+    height: 90px;
+    backdrop-filter: blur(100px);
+    gap: 51px;
 }
 
 .scrollbar__text{
@@ -116,8 +112,9 @@ a {
   text-transform: uppercase;
 }
 
+
+
 .star {
-flex: none;
 flex-shrink: 0;
 }
 
