@@ -17,7 +17,9 @@
         <a type="" class="button-go" href="#games-center">Поехали!</a>
     </section>
     <!--  Полоса для анимации  -->
+     <div class="scrollbar-box">
     <section class="scrollbar">
+        
         <div class="scrollbar__text">Викторина</div>
         <svg class="star" width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M18 0L22.8616 13.1384L36 18L22.8616 22.8616L18 36L13.1384 22.8616L0 18L13.1384 13.1384L18 0Z" fill="#202027"/>
@@ -72,6 +74,7 @@
 
         
     </section>
+    </div> 
     <!-- * Блок "Об играх" -->
     <section id="games-center" class="games center">
         <h2 class="games__title" id="Об_играх">Об играх</h2>
@@ -117,54 +120,54 @@
     <section class="game center">
         <h2 class="game__title" id="Мини-игры">Мини-игры</h2>
         <div class="game__img-container">
-            <div class="game__card" >
+            <article class="game__card" >
                 <div class="game__box">
                     <div class="game__text" id="game1" >Угадай число</div>
                     <p class="game__description">Попробуй угадать случайное <br> число от 1 до 100.</p>
                     <a onclick="playGame()" class="game__button" >Играть!</a>
                 </div>
-                <img src="img/gameone.svg" alt="" class="game__unit">
-            </div>
-            <div class="game__card-back" >
+                <img class="game__unit" src="img/gameone.svg" alt="Игра №1" >
+            </article>
+            <article class="game__card-back" >
                 <div class="game__box" id="game2">
                     <div class="game__text">Простая арифметика</div>
                     <p class="game__description">Попробуй решить простые арифметические задачи.</p>
                     <a onclick="arithmetic()"  class="game__button" >Играть!</a>
                 </div>
-                <img src="img/gametwo.svg" alt="" class="game__unit">
-            </div>
-            <div class="game__card">
+                <img  src="img/gametwo.svg" alt="Игра №2" >
+            </article>
+            <article class="game__card">
                 <div class="game__box" id="game3">
                     <div class="game__text">Переверни текст</div>
                     <p class="game__description">Попробуй ввести текст, который <br>будет перевернут.</p>
                     <a onclick="turnTheTextOver()" class="game__button" >Играть!</a>
                 </div>
-                <img src="img/gametree.svg" alt="" class="game__unit">
-            </div>
-            <div class="game__card-back">
+                <img class="game__unit" src="img/gametree.svg" alt="Игра №3" >
+            </article>
+            <article class="game__card-back">
               <div class="game__boxx" id="game4">
                     <div class="game__text">Камень, <br> ножницы, <br> бумага</div>
                     <p class="game__description">Сыграй в популярную игру <br> против компьютера.</p>
                     <a onclick="rockPaperScissors()" class="game__button">Играть!</a>
                 </div>
-                <img src="img/gamefive.png" alt="" class="game__unit">  
-            </div>
-            <div class="game__card">
+                <img class="game__unit" src="img/gamefive.png" alt="Игра №4" >  
+            </article>
+            <article class="game__card">
                 <div class="game__box" id="game5">
                     <div class="game__text">Простая викторина</div>
                     <p class="game__description">Отвечай на вопросы викторины с вариантами ответов.</p>
                     <a onclick="playQuiz()" class="game__button">Играть!</a>
                 </div>
-                <img src="img/gamefour.svg" alt="" class="game__unit">
-            </div>
-            <div class="game__card-back">
+                <img class="game__unit" src="img/gamefour.svg" alt="Игра №5">
+            </article>
+            <article class="game__card-back">
                 <div class="game__box" id="game6">
                     <div class="game__text">Генератор случайных <br> цветов</div>
                     <p class="game__description">Игра, в которой при клике на кнопку фон страницы меняется на случайный.</p>
                     <a onclick="changeBlockColor()" class="game__button">Играть!</a>
                 </div>
-                <img src="img/gamesix.svg" alt="" class="game__unit">
-            </div>
+                <img class="game__unit" src="img/gamesix.svg" alt="Игра №6">
+            </article>
 
         </div>
     </section>

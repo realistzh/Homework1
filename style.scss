@@ -26,6 +26,7 @@ a {
     background-position: right 0px top 0px, left 64px top 94px, left 156px top 69px, right 344px bottom 149px, right 455px bottom 255px;
     background-repeat: no-repeat;
     position: relative;
+    padding-top: 196px;
   }
 
 .header__welcome {
@@ -34,8 +35,7 @@ a {
     font-size: 64px;
     line-height: 78.02px;
     letter-spacing: 0px;
-    padding-top: 196px;
-    width: 769px;
+    max-width:769px;
   }
 
 .button-go:hover {
@@ -50,7 +50,7 @@ a {
     letter-spacing: 0px;
     padding-top: 24px;
     margin-bottom: 64px;
-    width: 720px;
+    max-width: 720px;
 }
 
 .header__text-go {
@@ -78,44 +78,41 @@ a {
     padding-bottom: 16px;
 }
 
-  /* Полоса для анимации */
+ /* Полоса для анимации */
+@keyframes scrollbar {
+  from {transform: translateX(0%);}
+  to {transform: translateX(0%);}
+}
 
-  @keyframes scrollbar {
-    from { transform: translateX(0%); }
-    to { transform: translateX(-50%); }
-
-  }
-
-
-  .scrollbar { 
-    display: inline-block;
-    text-wrap: nowrap;
-    animation-name: scrollbar 20s linear infinite;
-    overflow: hidden;
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: row;
-    align-items: center;
+.scrollbar-box{
+  overflow:hidden
+}
+ .scrollbar {
+    width: 100%;
     background-color: #BCEC30;
     height: 90px;
-    backdrop-filter: blur(100px);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     gap: 51px;
-}
-
-.scrollbar__text{
-  font-family: "Montserrat";
-  font-weight: 700;
-  font-size: 30px;
-  line-height: 33px;
-  letter-spacing: 4%;
-  flex-shrink: 0;
-  text-transform: uppercase;
-}
-
-
-
+    width: max-content;
+    animation: scrollbar 20s linear infinite;
+  
+  }
+ 
+  .scrollbar__text {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 33px;
+    letter-spacing: 4%;
+    flex-shrink: 0;
+    text-transform: uppercase;
+    color: #202027;
+  }
 .star {
-flex-shrink: 0;
+  flex: none;
+  flex-shrink: 0;
 }
 
 /* Блок "Об играх" */
@@ -271,12 +268,13 @@ transform: scale(1.1);
   line-height: 32px;
   letter-spacing: 0px;
   vertical-align: middle;
-  padding-bottom: 36px;
+  margin-bottom: 36px;
 }
 
 .game__unit {
   display: block;
   margin-left: auto;
+  max-width: 418px;
 }
 
 .game__img-container {
@@ -292,16 +290,12 @@ transform: scale(1.1);
   display: flex;
   background-color: #FFFFFF ;
   border-radius: 30px;
-  height: 500px;
-  width: 1200px;
 }
 .game__card-back {
   display: flex;
   flex-direction: row-reverse;
   background-color: #FFFFFF ;
   border-radius: 30px;
-  height: 500px;
-  width: 1200px;
 }
 
 .game__item {
@@ -367,7 +361,7 @@ transform: scale(1.1);
   font-size: 48px;
   letter-spacing: 0px;
   vertical-align: middle;
-  padding-bottom: 24px;
+  margin-bottom: 24px;
 
 }
 

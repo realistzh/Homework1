@@ -14,9 +14,9 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        padding-top: 147px;
 
         &__welcome {
-            padding-top: 147px;
             font-weight: 700;
             font-size: 40px;
             text-align: center;
@@ -115,13 +115,17 @@
 
         &__card {
             width: auto;
+
         }
         
         &__card-back {
             width: auto;
         }
 
-        
+        &__unit {
+            width: auto;
+            
+        }
 
     }
 }
@@ -140,9 +144,10 @@
         text-align: center;
         background-image: url(img/Vector.svg), url(img/Star\ 2.svg), url(img/Star\ 3.svg), url(img/Star\ 4.svg), url(img/Star\ 5.svg); 
         background-position: 609px 0px, 37px 97px, 91px 64px, 634px 559px, 578px 511px;
+        padding-top: 147px;
+
 
         &__welcome {
-            padding-top: 147px;
             font-weight: 700;
             font-size: 40px;
             text-align: center;
@@ -279,8 +284,8 @@
             background-color: #FFFFFF;
             border-radius: 30px;
             flex-direction: column-reverse;
-            height: inherit;
-            width: inherit;
+            max-width: inherit;
+            
         }
 
         &__box {
@@ -324,6 +329,7 @@
         &__unit {
             display: block;
             margin-left: inherit; 
+            max-width: 418px;
         }
     }
     
@@ -428,7 +434,6 @@
 // Полоса прокручивания
 
     .scrollbar {
-        max-width: 425px; 
         height: 51px;
         gap: 27px;
         overflow: hidden;
@@ -523,8 +528,7 @@
                 background-color: #FFFFFF;
                 border-radius: 30px;
                 flex-direction: column-reverse;
-                height: inherit;
-                width: inherit;
+                max-width: 343px;
             }
 
             &__box {
@@ -568,6 +572,7 @@
             &__unit {
                 display: block;
                 margin-left: inherit; 
+                
             }
     }
     
