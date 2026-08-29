@@ -123,9 +123,42 @@
         }
 
         &__unit {
-            width: auto;
+            width: 50%;
             
         }
+        
+        &__text {
+            color:  #202027;
+            text-align: left;
+            font-weight: 700;
+            font-size: 21px;
+            letter-spacing: 0px;
+            vertical-align: middle;
+            margin-bottom: 24px;;
+            
+        }
+
+        &__description  {
+           font-size: 19px; 
+        }
+
+        &__box {
+            margin: 23px 55px 50px 48px;
+        }
+
+        &__boxx {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            align-items: flex-start;
+            margin: 29px 100px 50px 48px;
+        }
+
+        &__img-container {
+
+        }
+        
+
 
     }
 }
@@ -340,7 +373,8 @@
         border-radius: 30px;
         flex-direction: column-reverse;
         height: inherit;
-        width: inherit;}
+        width: inherit;
+    }
 
 
         &__box {
@@ -349,12 +383,6 @@
             flex-wrap: nowrap;
             justify-content: space-evenly;
             align-items: revert;
-            margin: auto;
-            margin-top: 29px;
-            margin-bottom: 32.67px;
-            margin-left: 29px;
-            margin-right: 29px;
-
         }
 
     }
@@ -386,7 +414,7 @@
         background-image: none;
         text-align: center;
         background-image: url(imgmob/Starmob\ 1.svg), url(imgmob/Starmob\ 2.svg), url(imgmob/Starmob\ 3.svg), url(imgmob/Starmob\ 4.svg), url(imgmob/Starmob\ 5.svg); 
-        background-position: (216px 0px, 37px 97px, 91px 64px, 300px 650px, 270px 626px);
+        background-position: (403px 0px, 37px 97px, 91px 64px, 467px 781px, 434px 756px);
            
         &__welcome {
             padding-top: 147px;
@@ -521,6 +549,7 @@
             &__img-container {
                 margin-top: 48px;
                 margin-bottom: 48px;
+                align-items: center;
             }
 
             &__card {
@@ -572,6 +601,7 @@
             &__unit {
                 display: block;
                 margin-left: inherit; 
+                width: auto;
                 
             }
     }
@@ -583,7 +613,9 @@
         border-radius: 30px;
         flex-direction: column-reverse;
         height: inherit;
-        width: inherit;}
+        width: inherit;
+        max-width: 343px;
+    }
 
 
         &__box {
@@ -600,6 +632,15 @@
 
         }
 
+
+
+
+        &__boxx{        
+        margin: auto;
+        margin-top: 29px;
+        margin-bottom: 32.67px;
+        margin-left: 29px;
+        margin-right: 29px;}
     }
     
 // Подвал сайта

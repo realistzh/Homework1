@@ -274,7 +274,7 @@ transform: scale(1.1);
 .game__unit {
   display: block;
   margin-left: auto;
-  max-width: 418px;
+  width: 50%;
 }
 
 .game__img-container {
@@ -321,7 +321,7 @@ transform: scale(1.1);
 
 
 .game__boxx{
-    display: flex;
+  display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
   align-items: flex-start;

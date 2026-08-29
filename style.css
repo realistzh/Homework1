@@ -29,6 +29,7 @@ a {
   background-position: right 0px top 0px, left 64px top 94px, left 156px top 69px, right 344px bottom 149px, right 455px bottom 255px;
   background-repeat: no-repeat;
   position: relative;
+  padding-top: 196px;
 }
 
 .header__welcome {
@@ -37,7 +38,6 @@ a {
   font-size: 64px;
   line-height: 78.02px;
   letter-spacing: 0px;
-  padding-top: 196px;
   max-width: 769px;
 }
 
@@ -83,37 +83,41 @@ a {
 
 /* Полоса для анимации */
 @keyframes scrollbar {
-  from {transform: translateX(10%);}
-  to {transform: translateX(-50%);}
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+.scrollbar-box {
+  overflow: hidden;
 }
 
-.scrollbar-box{
-  overflow:hidden;
+.scrollbar {
+  width: 100%;
   background-color: #BCEC30;
+  height: 90px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 51px;
+  width: -moz-max-content;
+  width: max-content;
+  animation: scrollbar 20s linear infinite;
 }
- .scrollbar {
-    width: 100%;
-    background-color: #BCEC30;
-    height: 90px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 51px;
-    width: max-content;
-    animation: scrollbar 20s linear infinite;
-  
-  }
- 
-  .scrollbar__text {
-    font-family: "Montserrat", sans-serif;
-    font-weight: 700;
-    font-size: 30px;
-    line-height: 33px;
-    letter-spacing: 4%;
-    flex-shrink: 0;
-    text-transform: uppercase;
-    color: #202027;
-  }
+
+.scrollbar__text {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 33px;
+  letter-spacing: 4%;
+  flex-shrink: 0;
+  text-transform: uppercase;
+  color: #202027;
+}
+
 .star {
   flex: none;
   flex-shrink: 0;
@@ -275,12 +279,13 @@ a {
   line-height: 32px;
   letter-spacing: 0px;
   vertical-align: middle;
-  padding-bottom: 36px;
+  margin-bottom: 36px;
 }
 
 .game__unit {
   display: block;
   margin-left: auto;
+  width: 50%;
 }
 
 .game__img-container {
@@ -296,7 +301,6 @@ a {
   display: flex;
   background-color: #FFFFFF;
   border-radius: 30px;
-  max-width: auto;
 }
 
 .game__card-back {
@@ -304,7 +308,6 @@ a {
   flex-direction: row-reverse;
   background-color: #FFFFFF;
   border-radius: 30px;
- 
 }
 
 .game__item {
@@ -324,7 +327,7 @@ a {
   flex-direction: column;
   flex-wrap: nowrap;
   align-items: flex-start;
-  padding: 48px 55px 50px 48px;
+  margin: 48px 55px 50px 48px;
 }
 
 .game__boxx {
@@ -420,7 +423,6 @@ a {
     padding-top: 147px;
   }
   .header__welcome {
-   
     font-weight: 700;
     font-size: 40px;
     text-align: center;
@@ -500,6 +502,31 @@ a {
   }
   .game__card-back {
     width: auto;
+  }
+  .game__unit {
+    width: 50%;
+  }
+  .game__text {
+    color: #202027;
+    text-align: left;
+    font-weight: 700;
+    font-size: 21px;
+    letter-spacing: 0px;
+    vertical-align: middle;
+    margin-bottom: 24px;
+  }
+  .game__description {
+    font-size: 19px;
+  }
+  .game__box {
+    margin: 23px 55px 50px 48px;
+  }
+  .game__boxx {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    margin: 29px 100px 50px 48px;
   }
 }
 @media (min-width: 768px) and (max-width: 833px) {
@@ -617,8 +644,7 @@ a {
     background-color: #FFFFFF;
     border-radius: 30px;
     flex-direction: column-reverse;
-    height: inherit;
-    width: inherit;
+    max-width: inherit;
   }
   .game__box {
     display: flex;
@@ -655,6 +681,7 @@ a {
   .game__unit {
     display: block;
     margin-left: inherit;
+    max-width: 418px;
   }
   .game__card-back {
     display: flex;
@@ -670,11 +697,6 @@ a {
     flex-wrap: nowrap;
     justify-content: space-evenly;
     align-items: revert;
-    margin: auto;
-    margin-top: 29px;
-    margin-bottom: 32.67px;
-    margin-left: 29px;
-    margin-right: 29px;
   }
   .footer {
     font-weight: 600;
@@ -691,11 +713,10 @@ a {
     background-image: none;
     text-align: center;
     background-image: url(imgmob/Starmob\ 1.svg), url(imgmob/Starmob\ 2.svg), url(imgmob/Starmob\ 3.svg), url(imgmob/Starmob\ 4.svg), url(imgmob/Starmob\ 5.svg);
-    background-position: 216px 0px, 37px 97px, 91px 64px, 300px 650px, 270px 626px;
-    padding-top: 147px;
-  
+    background-position: 403px 0px, 37px 97px, 91px 64px, 467px 781px, 434px 756px;
   }
   .header__welcome {
+    padding-top: 147px;
     font-weight: 700;
     font-size: 40px;
     text-align: center;
@@ -791,14 +812,14 @@ a {
   .game__img-container {
     margin-top: 48px;
     margin-bottom: 48px;
+    align-items: center;
   }
   .game__card {
     display: flex;
     background-color: #FFFFFF;
     border-radius: 30px;
     flex-direction: column-reverse;
-    height: inherit;
-    width: inherit;
+    max-width: 343px;
   }
   .game__box {
     display: flex;
@@ -835,6 +856,7 @@ a {
   .game__unit {
     display: block;
     margin-left: inherit;
+    width: auto;
   }
   .game__card-back {
     display: flex;
@@ -843,6 +865,7 @@ a {
     flex-direction: column-reverse;
     height: inherit;
     width: inherit;
+    max-width: 343px;
   }
   .game__box {
     display: flex;
@@ -850,6 +873,13 @@ a {
     flex-wrap: nowrap;
     justify-content: space-evenly;
     align-items: revert;
+    margin: auto;
+    margin-top: 29px;
+    margin-bottom: 32.67px;
+    margin-left: 29px;
+    margin-right: 29px;
+  }
+  .game__boxx {
     margin: auto;
     margin-top: 29px;
     margin-bottom: 32.67px;
