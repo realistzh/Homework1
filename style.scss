@@ -81,23 +81,23 @@ a {
  /* Полоса для анимации */
 @keyframes scrollbar {
   from {transform: translateX(0%);}
-  to {transform: translateX(0%);}
+  to {transform: translateX(-100%);}
 }
 
 .scrollbar-box{
-  overflow:hidden
-}
- .scrollbar {
-    width: 100%;
+  overflow:hidden;
     background-color: #BCEC30;
+    
+}
+
+.scrollbar {
+    width: 100%;
     height: 90px;
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 51px;
-    width: max-content;
-    animation: scrollbar 20s linear infinite;
-  
+    animation: scrollbar 15s linear infinite;
   }
  
   .scrollbar__text {

@@ -87,24 +87,22 @@ a {
     transform: translateX(0%);
   }
   to {
-    transform: translateX(0%);
+    transform: translateX(-100%);
   }
 }
 .scrollbar-box {
   overflow: hidden;
+  background-color: #BCEC30;
 }
 
 .scrollbar {
   width: 100%;
-  background-color: #BCEC30;
   height: 90px;
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 51px;
-  width: -moz-max-content;
-  width: max-content;
-  animation: scrollbar 20s linear infinite;
+  animation: scrollbar 15s linear infinite;
 }
 
 .scrollbar__text {
@@ -444,7 +442,7 @@ a {
     max-width: none;
     height: 51px;
     gap: 27px;
-    overflow: hidden;
+    animation: scrollbar 15s linear infinite;
   }
   .scrollbar__text {
     font-weight: 700;
@@ -504,7 +502,7 @@ a {
     width: auto;
   }
   .game__unit {
-    width: 50%;
+    border-radius: 30px;
   }
   .game__text {
     color: #202027;
@@ -538,7 +536,7 @@ a {
     background-image: none;
     text-align: center;
     background-image: url(img/Vector.svg), url(img/Star\ 2.svg), url(img/Star\ 3.svg), url(img/Star\ 4.svg), url(img/Star\ 5.svg);
-    background-position: 609px 0px, 37px 97px, 91px 64px, 634px 559px, 578px 511px;
+    background-position: 663px 0px, 37px 97px, 91px 64px, 634px 559px, 578px 511px;
     padding-top: 147px;
   }
   .header__welcome {
@@ -570,7 +568,7 @@ a {
     font-size: 16px;
     line-height: 142%;
     text-align: center;
-    padding: 16px 103.5px 16px 103.5px;
+    margin: 16px 103.5px 16px 103.5px;
     align-items: center;
     justify-content: center;
   }
@@ -578,7 +576,7 @@ a {
     max-width: none;
     height: 51px;
     gap: 27px;
-    overflow: hidden;
+    animation: scrollbar 15s linear infinite;
   }
   .scrollbar__text {
     font-weight: 700;
@@ -644,7 +642,7 @@ a {
     background-color: #FFFFFF;
     border-radius: 30px;
     flex-direction: column-reverse;
-    max-width: inherit;
+    max-width: 418px;
   }
   .game__box {
     display: flex;
@@ -653,6 +651,16 @@ a {
     justify-content: space-evenly;
     align-items: revert;
     margin: auto;
+    margin-top: 29px;
+    margin-bottom: 32.67px;
+  }
+  .game__boxx {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: revert;
+    margin: 29px;
     margin-top: 29px;
     margin-bottom: 32.67px;
   }
@@ -676,12 +684,12 @@ a {
     line-height: 142%;
     letter-spacing: 0%;
     text-align: center;
-    padding: 16px 110.5px 16px 110.5px;
   }
   .game__unit {
     display: block;
     margin-left: inherit;
-    max-width: 418px;
+    width: auto;
+    border-radius: 30px;
   }
   .game__card-back {
     display: flex;
@@ -690,6 +698,7 @@ a {
     flex-direction: column-reverse;
     height: inherit;
     width: inherit;
+    max-width: 418px;
   }
   .game__box {
     display: flex;
@@ -697,6 +706,10 @@ a {
     flex-wrap: nowrap;
     justify-content: space-evenly;
     align-items: revert;
+    margin-top: 29.04px;
+    margin-right: 29.04px;
+    margin-bottom: 32.67px;
+    margin-left: 29.04px;
   }
   .footer {
     font-weight: 600;
@@ -713,7 +726,7 @@ a {
     background-image: none;
     text-align: center;
     background-image: url(imgmob/Starmob\ 1.svg), url(imgmob/Starmob\ 2.svg), url(imgmob/Starmob\ 3.svg), url(imgmob/Starmob\ 4.svg), url(imgmob/Starmob\ 5.svg);
-    background-position: 403px 0px, 37px 97px, 91px 64px, 467px 781px, 434px 756px;
+    background-position: 516px 0px, 37px 97px, 91px 64px, 467px 781px, 434px 756px;
   }
   .header__welcome {
     padding-top: 147px;
@@ -752,7 +765,7 @@ a {
   .scrollbar {
     height: 51px;
     gap: 27px;
-    overflow: hidden;
+    animation: scrollbar 10s linear infinite;
   }
   .scrollbar__text {
     font-weight: 700;
@@ -857,6 +870,7 @@ a {
     display: block;
     margin-left: inherit;
     width: auto;
+    border-radius: 30px;
   }
   .game__card-back {
     display: flex;
@@ -901,7 +915,7 @@ a {
     background-image: none;
     text-align: center;
     background-image: url(imgmob/Starmob\ 1.svg), url(imgmob/Starmob\ 2.svg), url(imgmob/Starmob\ 3.svg), url(imgmob/Starmob\ 4.svg), url(imgmob/Starmob\ 5.svg);
-    background-position: 265px 0px, 37px 97px, 91px 64px, 305px 580px, 272px 557px;
+    background-position: 265px 0px, 37px 97px, 91px 64px, 349px 753px, 326px 726px;
     display: fleX;
     flex-direction: column;
     align-items: center;
