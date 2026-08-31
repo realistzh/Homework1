@@ -217,3 +217,29 @@ function playQuiz() {
 
    alert("Игра окончена. Ваш счет: " + score);
 }
+
+
+
+ /*Игра №6*/   
+
+let clicksCounter = 0;
+function getRandomRgb() {
+    const r = Math.floor(Math.random() * 256);
+    const g = Math.floor(Math.random() * 256);
+    const b = Math.floor(Math.random() * 256);
+        return `rgb(${r}, ${g}, ${b})`;
+}
+function changeBlockColor() {
+    const block = document.querySelector(".game");
+    block.style.backgroundColor = getRandomRgb();
+    clicksCounter ++;
+    if(clicksCounter >= 10) {
+        endGame();
+    }
+}   
+function endGame() {
+    const block = document.querySelector(".game");
+    block.style.backgroundColor = "";
+     alert("Игра завершена!");
+    clicksCounter = 0;
+ }

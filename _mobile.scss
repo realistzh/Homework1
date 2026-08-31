@@ -14,9 +14,9 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        padding-top: 147px;
 
         &__welcome {
-            padding-top: 147px;
             font-weight: 700;
             font-size: 40px;
             text-align: center;
@@ -44,7 +44,7 @@
         max-width: none; 
         height: 51px;
         gap: 27px;
-        overflow: hidden;
+        animation: scrollbar 15s linear infinite;
         
         &__text {
             
@@ -115,13 +115,46 @@
 
         &__card {
             width: auto;
+
         }
         
         &__card-back {
             width: auto;
         }
 
+        &__unit {
+            border-radius: 30px;
+            
+        }
         
+        &__text {
+            color:  #202027;
+            text-align: left;
+            font-weight: 700;
+            font-size: 21px;
+            letter-spacing: 0px;
+            vertical-align: middle;
+            margin-bottom: 24px;;
+            
+        }
+
+        &__description  {
+           font-size: 19px; 
+        }
+
+        &__box {
+            margin: 23px 55px 50px 48px;
+        }
+
+        &__boxx {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            align-items: flex-start;
+            margin: 29px 100px 50px 48px;
+        }
+
+       
 
     }
 }
@@ -139,10 +172,11 @@
         background-image: none;
         text-align: center;
         background-image: url(img/Vector.svg), url(img/Star\ 2.svg), url(img/Star\ 3.svg), url(img/Star\ 4.svg), url(img/Star\ 5.svg); 
-        background-position: 609px 0px, 37px 97px, 91px 64px, 634px 559px, 578px 511px;
+        background-position: 663px 0px, 37px 97px, 91px 64px, 634px 559px, 578px 511px;
+        padding-top: 147px;
+
 
         &__welcome {
-            padding-top: 147px;
             font-weight: 700;
             font-size: 40px;
             text-align: center;
@@ -177,7 +211,7 @@
         font-size: 16px;
         line-height: 142%;
         text-align: center;
-        padding: 16px 103.5px 16px 103.5px;
+        margin: 16px 103.5px 16px 103.5px;
         align-items: center;
         justify-content: center;
     
@@ -189,7 +223,7 @@
         max-width: none; 
         height: 51px;
         gap: 27px;
-        overflow: hidden;
+        animation: scrollbar 15s linear infinite;
         
         &__text {
             
@@ -279,8 +313,8 @@
             background-color: #FFFFFF;
             border-radius: 30px;
             flex-direction: column-reverse;
-            height: inherit;
-            width: inherit;
+            max-width: 418px;
+            
         }
 
         &__box {
@@ -293,6 +327,18 @@
             margin-top: 29px;
             margin-bottom: 32.67px;
         }
+
+        &__boxx {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            justify-content: space-evenly;
+            align-items: revert;
+            margin: 29px;
+            margin-top: 29px;
+            margin-bottom: 32.67px;
+        }
+
 
         &__text {
             font-weight: 700;
@@ -317,13 +363,15 @@
             line-height: 142%;
             letter-spacing: 0%;
             text-align: center;
-            padding: 16px 110.5px 16px 110.5px ;
         }
         
 
         &__unit {
             display: block;
             margin-left: inherit; 
+            width: auto;
+            border-radius: 30px;
+
         }
     }
     
@@ -334,7 +382,9 @@
         border-radius: 30px;
         flex-direction: column-reverse;
         height: inherit;
-        width: inherit;}
+        width: inherit;
+        max-width: 418px;
+    }
 
 
         &__box {
@@ -343,11 +393,10 @@
             flex-wrap: nowrap;
             justify-content: space-evenly;
             align-items: revert;
-            margin: auto;
-            margin-top: 29px;
+            margin-top: 29.04px;
+            margin-right: 29.04px;
             margin-bottom: 32.67px;
-            margin-left: 29px;
-            margin-right: 29px;
+            margin-left: 29.04px;
 
         }
 
@@ -380,7 +429,7 @@
         background-image: none;
         text-align: center;
         background-image: url(imgmob/Starmob\ 1.svg), url(imgmob/Starmob\ 2.svg), url(imgmob/Starmob\ 3.svg), url(imgmob/Starmob\ 4.svg), url(imgmob/Starmob\ 5.svg); 
-        background-position: (216px 0px, 37px 97px, 91px 64px, 300px 650px, 270px 626px);
+        background-position: (516px 0px, 37px 97px, 91px 64px, 467px 781px, 434px 756px);
            
         &__welcome {
             padding-top: 147px;
@@ -428,12 +477,10 @@
 // Полоса прокручивания
 
     .scrollbar {
-        max-width: 425px; 
         height: 51px;
         gap: 27px;
-        overflow: hidden;
+        animation: scrollbar 10s linear infinite;
        
-        
 
         &__text {
            
@@ -516,6 +563,7 @@
             &__img-container {
                 margin-top: 48px;
                 margin-bottom: 48px;
+                align-items: center;
             }
 
             &__card {
@@ -523,8 +571,7 @@
                 background-color: #FFFFFF;
                 border-radius: 30px;
                 flex-direction: column-reverse;
-                height: inherit;
-                width: inherit;
+                max-width: 343px;
             }
 
             &__box {
@@ -568,6 +615,8 @@
             &__unit {
                 display: block;
                 margin-left: inherit; 
+                width: auto;
+                border-radius: 30px;
             }
     }
     
@@ -578,7 +627,9 @@
         border-radius: 30px;
         flex-direction: column-reverse;
         height: inherit;
-        width: inherit;}
+        width: inherit;
+        max-width: 343px;
+    }
 
 
         &__box {
@@ -595,6 +646,15 @@
 
         }
 
+
+
+
+        &__boxx{        
+        margin: auto;
+        margin-top: 29px;
+        margin-bottom: 32.67px;
+        margin-left: 29px;
+        margin-right: 29px;}
     }
     
 // Подвал сайта
@@ -620,7 +680,7 @@
         background-image: none;
         text-align: center;
         background-image: url(imgmob/Starmob\ 1.svg), url(imgmob/Starmob\ 2.svg), url(imgmob/Starmob\ 3.svg), url(imgmob/Starmob\ 4.svg), url(imgmob/Starmob\ 5.svg); 
-        background-position: (265px 0px, 37px 97px, 91px 64px, 305px 580px, 272px 557px);
+        background-position: (265px 0px, 37px 97px, 91px 64px, 349px 753px, 326px 726px);
         display: fleX;
         flex-direction: column;
         align-items: center;
